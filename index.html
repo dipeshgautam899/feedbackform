@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form action="connect.php" method="post">
+        <label for="checkin-date">Your Checked In Date</label>
+        <input type="date" id="checkin-date" name="checkin-date" required><br><br>
+
+        <label for="name">What is your name?</label>
+        <input type="text" id="name" name="name" required><br>
+      
+        <label for="email">What is your email address?</label>
+        <input type="email" id="email" name="email" required><br>        
+      
+        <label for="room-number">Room Number</label>
+        <input type="text" id="room-number" name="room-number" required><br>
+      
+        <label for="service-quality">How would you rate the quality of the service?</label>
+        <select id="service-quality" name="service-quality" required>
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option> 
+          <option value="fair">Fair</option>          
+        </select><br>
+      
+        <label for="recommendation">How likely is it that you would recommend this hotel to a friend or colleague?</label>
+        <select id="recommendation" name="recommendation" required>
+          <option value="very-likely">Very Likely</option>
+          <option value="likely">Likely</option>
+          <option value="neutral">Neutral</option>          
+        </select><br>
+      
+        <label for="info-clearness">How clear was the information that our guest relation officer provided to you?</label>
+        <select id="info-clearness" name="info-clearness" required>
+          <option value="very-clear">Very Clear</option>
+          <option value="clear">Clear</option>
+          <option value="neutral">Neutral</option>          
+        </select><br>
+      
+        <label for="comments">Have any other comments, questions, or concerns:</label>
+        <textarea id="comments" name="comments" required></textarea><br>
+      
+        <input type="submit" value="Submit">
+      </form>
+      
+</body>
+</html>
